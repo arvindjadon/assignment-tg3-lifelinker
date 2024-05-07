@@ -1,16 +1,21 @@
 import styled from "styled-components";
+import MainNav from "./MainNav";
 
 const StyledSidebar = styled.aside`
-  background-color: var(--color-sidebar);
+  background-color: var(--color-sidebar-background);
   padding: 3.2rem 2.4rem;
-  border-right: 1px solid black;
-  grid-row: 1/-1;
+  grid-row: 2 / -1;
+  border-radius: var(--border-radius-sm);
+
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
 `;
 
 function Sidebar() {
   return (
     <StyledSidebar>
-      <p>Logo</p>
+      <MainNav />
     </StyledSidebar>
   );
 }

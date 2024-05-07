@@ -4,46 +4,36 @@ import Sidebar from "./Sidebar";
 import { Outlet } from "react-router-dom";
 
 const StyledAppLayout = styled.div`
-  max-width: 130rem;
-`;
-
-const Container = styled.div`
-  margin: 0 auto;
+  padding: 0 5rem;
   display: grid;
-  grid-template-columns: 2fr 5fr;
+  grid-template-columns: 1fr 2.5fr;
   grid-template-rows: auto 1fr;
   height: 100vh;
-  max-width: 120rem;
-  background-color: green;
-  overflow: hidden;
+  max-width: 192rem;
 `;
 
 const Main = styled.main`
-  background-color: #222;
-  padding: 4rem 4.8rem 6.4rem;
+  background-color: var(--color-background);
+  padding: 2rem 4.8rem 6.4rem;
+  overflow: scroll;
+  grid-row: 1 / -1;
 `;
 
-const OutletContainer = styled.div`
-  max-width: 120rem;
-  margin: 0 auto;
+const Container = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 3.2rem;
-  background-color: yellow;
 `;
 
 function AppLayout() {
   return (
     <StyledAppLayout>
       <Header />
-      <Container>
-        <Sidebar />
-        <Main>
-          <OutletContainer>
-            <Outlet />
-          </OutletContainer>
-        </Main>
-      </Container>
+      <Sidebar />
+      <Main>
+        <Container>
+          <Outlet />
+        </Container>
+      </Main>
     </StyledAppLayout>
   );
 }
