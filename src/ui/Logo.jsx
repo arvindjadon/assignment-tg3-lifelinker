@@ -9,12 +9,12 @@ function Logo({ type }) {
     ${(props) =>
       props.type === "small" &&
       `
-    height: 2rem;
+    height: 4rem;
   `}
     ${(props) =>
       props.type === "large" &&
       `
-    height: 5rem;
+    height: 6rem;
     `}
     width: auto;
   `;
