@@ -8,17 +8,12 @@ import {
   Tooltip,
   Legend,
 } from "recharts";
-import styled from "styled-components";
 import Heading from "../../ui/Heading";
 import DashboardBox from "./DashboardBox";
 
-const StyledBarChart = styled(DashboardBox)`
-  grid-column: 1 / -1;
-`;
-
 function AreaBarChart({ data }) {
   return (
-    <StyledBarChart>
+    <DashboardBox>
       <Heading as="h2">Areas</Heading>
       <ResponsiveContainer height={300} width="100%">
         <BarChart
@@ -41,7 +36,7 @@ function AreaBarChart({ data }) {
           <Bar dataKey="Last Month" fill="var(--color-blue-100)" />
         </BarChart>
       </ResponsiveContainer>
-    </StyledBarChart>
+    </DashboardBox>
   );
 }
 

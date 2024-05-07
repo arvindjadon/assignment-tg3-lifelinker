@@ -6,13 +6,8 @@ import {
   Cell,
   Tooltip,
 } from "recharts";
-import styled from "styled-components";
 import Heading from "../../ui/Heading";
 import DashboardBox from "./DashboardBox";
-
-const StyledPieChart = styled(DashboardBox)`
-  grid-column: 3 / 5;
-`;
 
 const data = [
   {
@@ -49,7 +44,7 @@ const data = [
 
 function AreaPieChart() {
   return (
-    <StyledPieChart>
+    <DashboardBox>
       <Heading as="h2">Areas</Heading>
       <ResponsiveContainer width="100%" height={200}>
         <PieChart>
@@ -79,7 +74,7 @@ function AreaPieChart() {
           />
         </PieChart>
       </ResponsiveContainer>
-    </StyledPieChart>
+    </DashboardBox>
   );
 }
 

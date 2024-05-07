@@ -8,17 +8,12 @@ import {
   Tooltip,
   Legend,
 } from "recharts";
-import styled from "styled-components";
 import DashboardBox from "./DashboardBox";
 import Heading from "../../ui/Heading";
 
-const StyledLineChart = styled(DashboardBox)`
-  grid-column: 1 / -1;
-`;
-
 function AreaLineChart({ data }) {
   return (
-    <StyledLineChart>
+    <DashboardBox>
       <Heading as="h2">Areas</Heading>
       <ResponsiveContainer height={300} width="100%">
         <LineChart width={500} height={300} data={data}>
@@ -40,7 +35,7 @@ function AreaLineChart({ data }) {
           />
         </LineChart>
       </ResponsiveContainer>
-    </StyledLineChart>
+    </DashboardBox>
   );
 }
 

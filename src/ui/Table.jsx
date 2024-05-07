@@ -3,7 +3,6 @@ import Heading from "./Heading";
 
 const StyledTable = styled.div`
   background-color: var(--color-white);
-  grid-column: 1 / -1;
   padding: 2rem;
   border-radius: var(--border-radius-md);
 `;

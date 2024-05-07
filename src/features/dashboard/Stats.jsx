@@ -2,10 +2,22 @@ import Stat from "./Stat";
 import { BsHandbag } from "react-icons/bs";
 import { IoIosPeople } from "react-icons/io";
 import { FaHandHoldingMedical } from "react-icons/fa";
+import styled from "styled-components";
+
+const StyledStats = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+
+  @media (max-width: 57rem) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+`;
 
 function Stats() {
   return (
-    <>
+    <StyledStats>
       <Stat
         title="Leads"
         color="green"
@@ -34,7 +46,7 @@ function Stats() {
         value={20643}
         text="3.75%"
       />
-    </>
+    </StyledStats>
   );
 }
 
