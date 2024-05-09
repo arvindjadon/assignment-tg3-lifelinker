@@ -4,7 +4,6 @@ import MainNav from "./MainNav";
 const StyledSidebar = styled.aside`
   background-color: var(--color-sidebar-background);
   padding: 3.2rem 2.4rem;
-  max-height: 100vh;
   border-radius: var(--border-radius-sm);
 
   display: flex;

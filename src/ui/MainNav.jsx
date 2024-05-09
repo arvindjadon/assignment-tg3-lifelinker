@@ -56,60 +56,70 @@ function MainNav() {
             <span>Home</span>
           </StyledNavLink>
         </li>
+        <hr />
         <li>
           <StyledNavLink to="/clinical">
             <CiMedicalCross />
             <span>Clinical</span>
           </StyledNavLink>
         </li>
+        <hr />
         <li>
           <StyledNavLink to="/embrology">
             <GiEmbryo />
             <span>Embrology</span>
           </StyledNavLink>
         </li>
+        <hr />
         <li>
           <StyledNavLink to="/accounts">
             <BsFillCalculatorFill />
             <span>Purchase & Accounts</span>
           </StyledNavLink>
         </li>
+        <hr />
         <li>
           <StyledNavLink to="/clinical">
             <CiMedicalCross />
             <span>Clinical</span>
           </StyledNavLink>
         </li>
+        <hr />
         <li>
           <StyledNavLink to="/embrology">
             <GiEmbryo />
             <span>Embrology</span>
           </StyledNavLink>
         </li>
+        <hr />
         <li>
           <StyledNavLink to="/accounts">
             <BsFillCalculatorFill />
             <span>Purchase & Accounts</span>
           </StyledNavLink>
         </li>
+        <hr />
         <li>
           <StyledNavLink to="/clinical">
             <CiMedicalCross />
             <span>Clinical</span>
           </StyledNavLink>
         </li>
+        <hr />
         <li>
           <StyledNavLink to="/embrology">
             <GiEmbryo />
             <span>Embrology</span>
           </StyledNavLink>
         </li>
+        <hr />
         <li>
           <StyledNavLink to="/accounts">
             <BsFillCalculatorFill />
             <span>Purchase & Accounts</span>
           </StyledNavLink>
         </li>
+        <hr />
       </NavList>
     </nav>
   );

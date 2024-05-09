@@ -56,11 +56,7 @@ function AreaPieChart() {
             fill="#8884d8"
           >
             {data.map((entry) => (
-              <Cell
-                fill={entry.color}
-                stroke={entry.color}
-                key={entry.duration}
-              />
+              <Cell fill={entry.color} stroke={entry.color} key={entry.name} />
             ))}
           </Pie>
           <Tooltip />
