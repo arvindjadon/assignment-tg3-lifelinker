@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import MainNav from "./MainNav";
 
 const StyledSidebar = styled.aside`
@@ -9,11 +9,29 @@ const StyledSidebar = styled.aside`
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
+
+  @media (max-width: 59rem) {
+    ${(props) =>
+      props.isOpen === false &&
+      css`
+        display: none;
+      `}
+
+    position: absolute;
+    top: 10rem;
+    left: 5rem;
+    width: 50%;
+    height: 100vh;
+  }
+
+  @media (max-width: 34rem) {
+    width: 100%;
+  }
 `;
 
-function Sidebar() {
+function Sidebar({ isOpen }) {
   return (
-    <StyledSidebar>
+    <StyledSidebar isOpen={isOpen}>
       <MainNav />
     </StyledSidebar>
   );

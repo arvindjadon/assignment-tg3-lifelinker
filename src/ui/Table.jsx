@@ -5,6 +5,7 @@ const StyledTable = styled.div`
   background-color: var(--color-white);
   padding: 2rem;
   border-radius: var(--border-radius-md);
+  overflow-y: scroll;
 `;
 
 function Table() {

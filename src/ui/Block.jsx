@@ -7,8 +7,9 @@ const StyledBlock = styled.div`
   grid-template-columns: 9fr 7fr;
   gap: 2.4rem;
 
-  @media (max-width: 57rem) {
+  @media (max-width: 59rem) {
     grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 `;
 

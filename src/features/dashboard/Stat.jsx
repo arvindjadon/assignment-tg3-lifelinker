@@ -5,7 +5,7 @@ const StyledStat = styled.div`
   border-radius: var(--border-radius-sm);
   padding: 1.6rem;
   display: grid;
-  grid-template-columns: 6.4rem 1fr;
+  grid-template-columns: 1fr 6.4rem;
   grid-template-rows: auto auto;
   column-gap: 1.6rem;
   row-gap: 0.4rem;
@@ -37,7 +37,7 @@ const Icon = styled.div`
   }
 `;
 
-const Title = styled.h5`
+const Title = styled.p`
   align-self: end;
   font-size: 2rem;
   letter-spacing: 0.4px;

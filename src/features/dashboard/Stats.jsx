@@ -9,9 +9,9 @@ const StyledStats = styled.div`
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
 
-  @media (max-width: 57rem) {
+  @media (max-width: 59rem) {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
   }
 `;
 
