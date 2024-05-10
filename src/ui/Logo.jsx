@@ -1,24 +1,24 @@
 import styled from "styled-components";
 
-function Logo({ type }) {
-  const StyledLogo = styled.div`
-    padding: 1.2rem 0;
-  `;
+const StyledLogo = styled.div`
+  padding: 1.2rem 0;
+`;
 
-  const Img = styled.img`
-    ${(props) =>
-      props.type === "small" &&
-      `
+const Img = styled.img`
+  ${(props) =>
+    props.type === "small" &&
+    `
     height: 4rem;
   `}
-    ${(props) =>
-      props.type === "large" &&
-      `
+  ${(props) =>
+    props.type === "large" &&
+    `
     height: 6rem;
     `}
     width: auto;
-  `;
+`;
 
+function Logo({ type }) {
   return (
     <StyledLogo>
       <Img type={type} src="logo.png" alt="Logo" />

@@ -3,15 +3,12 @@ import styled from "styled-components";
 import { CiMedicalCross } from "react-icons/ci";
 import { GiEmbryo } from "react-icons/gi";
 import { BsFillCalculatorFill } from "react-icons/bs";
+import TreeComponent from "./TreeComponent";
 
 const NavList = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
-
-  @media (max-width: 59rem) {
-    /* width: 100%; */
-  }
 `;
 
 const StyledNavLink = styled(NavLink)`
@@ -51,17 +48,7 @@ const StyledNavLink = styled(NavLink)`
   }
 
   @media (max-width: 59rem) {
-    &:link,
-    &:visited {
-      display: flex;
-      align-items: center;
-      gap: 1.2rem;
-
-      color: var(--color-white);
-      font-size: 2rem;
-      font-weight: 500;
-      padding: 1.2rem 2.4rem;
-      transition: all 0.3s;
+   font-size: 2rem;
     }
 
     @media (max-width: 34rem) {
@@ -77,6 +64,9 @@ function MainNav() {
   return (
     <nav>
       <NavList>
+        <li>
+          <TreeComponent />
+        </li>
         <li>
           <StyledNavLink to="/dashboard">
             <span>Home</span>
