@@ -4,6 +4,7 @@ import Heading from "../ui/Heading";
 import Logo from "../ui/Logo";
 import Row from "../ui/Row";
 import TopRightDiv from "../ui/TopRightDiv";
+import DatePicker from "../ui/DatePicker";
 import { CiBellOn } from "react-icons/ci";
 
 const Bell = styled.div`
@@ -36,7 +37,7 @@ function Dashboard() {
         <Heading as="h1">Dashboard</Heading>
         <Row type="horizontal">
           <TopRightDiv text="Queue" />
-          <TopRightDiv text="1 Feb, 2024 - 4 Mar, 2024" />
+          <DatePicker />
           <Bell>
             <CiBellOn />
           </Bell>

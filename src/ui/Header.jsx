@@ -17,9 +17,6 @@ const Icon = styled.div`
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
   background-color: var(--color-background);
   cursor: pointer;
 

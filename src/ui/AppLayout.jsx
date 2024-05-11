@@ -15,6 +15,11 @@ const StyledAppLayout = styled.div`
   @media (max-width: 59rem) {
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
+    margin: 0 1rem;
+  }
+
+  @media (max-width: 34rem) {
+    margin: 0 0.2rem;
   }
 `;
 

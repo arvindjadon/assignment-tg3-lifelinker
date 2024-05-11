@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const StyledLogo = styled.div`
-  padding: 1.2rem 0;
+  padding-top: 1.2rem;
 `;
 
 const Img = styled.img`
