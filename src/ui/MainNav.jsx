@@ -48,14 +48,16 @@ const StyledNavLink = styled(NavLink)`
   }
 
   @media (max-width: 59rem) {
-   font-size: 2rem;
+    &:link,
+    &:visited {
+      font-size: 1.8rem;
     }
+  }
 
-    @media (max-width: 34rem) {
-      &:link,
-      &:visited {
-        font-size: 3rem;
-      }
+  @media (max-width: 34rem) {
+    &:link,
+    &:visited {
+      font-size: 2rem;
     }
   }
 `;

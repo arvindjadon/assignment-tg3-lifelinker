@@ -9,13 +9,15 @@ const Img = styled.img`
     props.type === "small" &&
     `
     height: 4rem;
+    @media (max-width: 59rem) {
+    display: none;
+  }
   `}
   ${(props) =>
     props.type === "large" &&
     `
     height: 6rem;
     `}
-    width: auto;
 `;
 
 function Logo({ type }) {

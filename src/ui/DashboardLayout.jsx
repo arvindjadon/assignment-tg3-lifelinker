@@ -3,6 +3,7 @@ import Stats from "../features/dashboard/Stats";
 import AreaLineChart from "../features/dashboard/AreaLineChart";
 import Block from "../ui/Block";
 import Table from "../ui/Table";
+import styled from "styled-components";
 
 const data = [
   {
@@ -61,15 +62,29 @@ const data = [
   },
 ];
 
+const StyledDashboardLayout = styled.div`
+  display: grid;
+  grid-template-rows: repeat(5, auto);
+  gap: 4rem;
+
+  @media (max-width: 59rem) {
+    gap: 2rem;
+  }
+
+  @media (max-width: 34rem) {
+    gap: 1rem;
+  }
+`;
+
 function DashboardLayout() {
   return (
-    <>
+    <StyledDashboardLayout>
       <Stats />
       <Block />
       <Table />
       <AreaBarChart data={data} />
       <AreaLineChart data={data} />
-    </>
+    </StyledDashboardLayout>
   );
 }
 

@@ -5,10 +5,11 @@ const StyledSidebar = styled.aside`
   background-color: var(--color-sidebar-background);
   padding: 3.2rem 2.4rem;
   border-radius: var(--border-radius-sm);
-
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
+  z-index: 1;
+  overflow-x: scroll;
 
   @media (max-width: 59rem) {
     ${(props) =>
@@ -18,8 +19,8 @@ const StyledSidebar = styled.aside`
       `}
 
     position: absolute;
-    top: 10rem;
-    left: 5rem;
+    top: 8rem;
+    left: 0;
     width: 50%;
     height: 100vh;
   }

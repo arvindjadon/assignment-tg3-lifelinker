@@ -10,6 +10,11 @@ const StyledBlock = styled.div`
   @media (max-width: 59rem) {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  @media (max-width: 34rem) {
+    gap: 1rem;
   }
 `;
 
